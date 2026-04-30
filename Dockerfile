@@ -20,4 +20,4 @@ EXPOSE 8501
 # Healthcheck για να ξέρει το Coolify αν η εφαρμογή είναι υγιής
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "/app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
